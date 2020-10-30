@@ -1,0 +1,41 @@
+<div id='root'>
+  <div>
+    <nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">	
+		  <%= link_to 'Pokémon TCG', '#', method: 'post', :class => 'navbar-brand' %>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav navbar-right">
+		    <li><%= link_to 'Create Backup', cards_path, method: 'post'%></li>
+			<li><%= link_to 'Purge Backup', destroy_all_cards_path, method: 'delete' %></li>
+		  </ul>
+		</div>
+	  </div>
+    </nav>
+    <section class='section'>
+      <div class='container'>
+        <form class="form-inline">
+          <%=form_tag cards_path,{method: 'get', class: 'navbar-form navbar-left', role: 'search'}  do%>
+            <div class="form-group">
+              <%= text_field_tag :search, params[:search], class: "form-control mr-sm-2", placeholder:"Search by Name/Rarity'"%>
+            </div>
+            <%= button_tag "Search Backup", :class => 'btn btn-primary', :name => nil %>
+          <% end %>
+        </form>
+        <div class='columns pkmn-gallery fade-in'>
+      	  <div class="column">
+      	    <% if !@cards.nil? && @cards.count > 0 %>
+      	      <h3><%= @cards.count %> Cards Found!</h3>
+      	      <% @cards.each do |card| %>
+      	  	    <a href=''><%= image_tag("#{card.imageUrl}", class: "hvr-grow") %></a>
+      	      <% end %>
+      	    <% else %>
+      	      <h3>No Cards Found!</h3>
+      	    <% end %>
+      	  </div>	
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  name: MyString
+  imageUrl: MyString
+  imageUrlHiRes: MyString
+  supertype: MyString
+  subtype: MyString
+  number: MyString
+  rarity: MyString
+  artist: MyString
+  series: MyString
+  set: MyString
+  setCode: MyString
+  text: MyString
+  text: MyString
+
+two:
+  uid: MyString
+  name: MyString
+  imageUrl: MyString
+  imageUrlHiRes: MyString
+  supertype: MyString
+  subtype: MyString
+  number: MyString
+  rarity: MyString
+  artist: MyString
+  series: MyString
+  set: MyString
+  setCode: MyString
+  text: MyString
+  text: MyString

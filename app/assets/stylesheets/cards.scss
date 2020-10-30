@@ -1,0 +1,44 @@
+// Place all the styles related to the Cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  max-width: 1152px;
+  width: 1152px;
+}
+
+.column {
+	display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+
+.pkmn-gallery {
+    text-align: center;
+}
+
+.columns {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    margin-top: -.75rem;
+}
+
+a {
+    color: #3273dc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pkmn-gallery img {
+    background-size: 95%;
+    margin: 10px 20px 10px 0;
+    width: 240px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#root, #root>div, body, html {
+    min-height: 100vh;
+}
