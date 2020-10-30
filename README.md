@@ -12,3 +12,9 @@ When the Search Backup button is pressed, your application will present the user
 5. Verify the `config/database.yml` file for any desired changes based on your username/password
 5. Run `rake db:create` & `rake db:migrate`
 6. Start the rails server `rails s`
+
+## Assumptions
+1. Search works by typing the complete card name or rariry in the search bar.
+2. You can check the card name/rarity from the `API https://api.pokemontcg.io/v1/cards` or below are the same from the API;
+For Example: Search with card names -> `Vespiquen, Cubone, Windstorm, Alakazam 4`
+Search with rarity -> `rare, common, uncommon, Rare Holo Lv.X`
